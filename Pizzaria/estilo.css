@@ -1,0 +1,773 @@
+	html{
+		scroll-behavior: smooth;
+	}
+	.btn{
+	display:none;
+	}
+	*{
+		font-family:Josefin Sans;
+		color:#1C1B1B;	
+	}
+	body{
+		margin:auto;
+		background:url(imagens/fundo3.jpg);
+		background-size:cover;		
+	}
+
+	header{
+		/*position:fixed;*/
+		display:flex;/*para o header 'encostar' no top*/
+		width:100%;
+		justify-content:space-between;
+		align-items:center;
+		background:linear-gradient(#141313,#141313);	
+		height:120px;		
+	}
+	nav{
+		display:flex;	
+		align-items:center;	
+		height:100%;
+		width:80%;		
+	}
+	nav ul{
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+		height:100%;		
+	}
+	nav li{
+		display:flex;
+		list-style:none;
+		align-items:center;
+		height:100%;		
+	}
+
+	.lista a:hover{
+		/* background:#F1A426; */
+		background:#FF9E00;
+	}
+	.lista:hover{
+		/* background:#F1A426; */
+		background:#FF9E00;
+	}
+	a{
+		text-decoration:none;			
+	}
+	nav a{
+		font-size:18px;
+		color:white;
+		padding:35px 20px;
+	}
+	.logo{
+		width:20%;
+		margin-top:15px;		
+	}
+	.logo img{
+		margin-left:30px;
+		margin-bottom:10px;
+		width:80px;
+		height:80px;		
+	}
+	.pedidos{
+		margin:auto;
+		width:450px;
+		margin-top:50px;
+		background:dd;
+		font-size:19px;
+	} 
+	.tamanhos{
+		/* border-left:1px solid #C7C6C3; */
+		box-shadow:1px 3px 9px #afafaf;
+		background:white;		
+	}
+	.bordas{
+		box-shadow:1px 3px 9px #afafaf;
+		background:white;
+	}
+	.extras{
+		box-shadow:1px 3px 9px #afafaf;
+		background:white;
+		width:100%;
+	}
+	.pedidoTitulo{
+		background:#FF9E00;
+		margin:0;
+		font-size:20px;
+		color:black;		
+	}
+	.tamanho-item{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.borda-item{
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	.extra-item{
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	.botao{
+		display:flex;
+		justify-content:space-between;
+		font-size:18px;
+		padding:10px;
+		background:#FF9E00;
+		border:none;
+		width:95%;
+		position:relative;
+		right:-12px; 
+		top:-55px;
+		border-radius:5px;
+		text-align:center;
+	}
+	.botao:hover{
+		box-shadow:inset 2px 2px 11px #A87013;
+		/* opacity:0.90; */
+		cursor:pointer;
+	}
+	.extras::after{
+		content:"";
+		display:inline-block;
+		height:70px;
+	}
+
+	table{
+		width:100%;
+		overflow-x:auto;
+	}
+	.colunaUm{
+		padding-right:100px;
+	}
+	.colunaDois{
+		width:20%;
+		background:#F1A426;
+		padding:5px;
+	}
+	.sabor{
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:10px;
+		
+	}
+	.sabor img{
+		width:150px;
+		height:150px%;
+		margin-bottom:5px;
+		border-radius:5px;
+	}
+	.p1{
+		font-weight:bold;
+		margin-left:6px;
+		text-align:center;
+		
+	}
+	.p2{
+		text-align:left;
+		margin-left:10px;
+	}
+		.indexP1{
+		font-weight:bold;
+		margin-left:6px;
+		text-align:center;
+		color:#292626;
+		font-size:18px;
+	}
+	.descricao{
+		width:100%;
+		height:50px;				
+	}
+	.indexP2{
+		display:flex;
+		text-align:left;
+		margin-left:10px;
+		color:#292626;
+		font-size:16px;
+	}
+	.info{
+	margin:0px;
+	width:100%;
+	text-align:left;	
+	height:300px;
+	}
+
+	.containerSabores{
+		width:100%;
+		margin:auto;
+		display:flex;
+		justify-content:space-around;
+		flex-wrap:wrap;
+		background-color: rgba(20,19,19,0.1);
+	}
+	.saborItem{
+		background-color: rgba(255,255,255,0.8);
+		box-shadow:2px 2px 8px #C7C6C3;	
+		margin:1px;
+		margin-bottom:50px;
+		margin-top:50px;
+		width:20%;
+	}
+		
+	.saborItem img{
+		/*a imagem não ficava centralizada, então usei "display:block; e coloquei margin:auto;"*/
+		display:block;
+		margin:auto;
+		width:90%;
+		padding-top:25px;
+	}
+	.saborItem a{
+		/* background:#F1A426; */
+		background:#FF9E00;
+		padding:2%;
+		padding-left:8%;
+		padding-right:8%;
+		font-weight:bold;
+	}
+	.tbPizza{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		margin:auto;
+		height:40px;
+		margin-left:8px; 
+		margin-right:8px; 			
+	}
+	.tbPizza select{
+		color:white;
+		background:#141313;
+		font-size:16px;
+		width:49%;
+		height:35px;
+		border-radius:7px;
+	}
+	select:hover { 
+		background:#1d1d1d;
+	}
+	.tbPizza select option {
+		font-size:16px;
+		color:white;
+	}
+	.botaoComprar{
+		/* background:#F1A426; */
+		background:#FF9E00;
+		display:block;
+		margin:auto;
+		margin-bottom:10px;
+		width:97%;
+		border:none;
+		padding:5px;
+		color:black;
+		font-weight:bold;
+		font-size:17px;
+		border-radius:7px;
+	}
+	.botaoComprar:hover{
+		box-shadow:inset 1px 1px 10px #A87013;
+		cursor:pointer;
+	}
+	.pedidos2{
+		display:none;
+	}
+
+	.info p{
+		color:white;
+	}
+
+	.parallax{
+		background-attachment:fixed;
+		height:300px;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+	.imgRodape{
+		background-image:url(imagens/background.jpg);
+	} 
+
+	footer {
+		width:100%;
+	/*	background:#FF9E00;*/
+		background:#141313;
+		height:180px;
+	 }
+	 footer p{
+		color:white;	
+	 }
+	 footer a{
+		 text-decoration:none;
+		 color:white;
+	 }	 
+	  .f-div{
+		 display:flex;
+		 justify-content:space-between;
+		width:100%;
+	 }
+	 .f-texto{
+		display:flex;
+		justify-content:flex-start;
+		color:#FF9E00;
+		margin:15px;  
+		width:50%;	 
+	}
+	.f-texto ul li{
+		text-decoration:none;
+		color:white;
+		 list-style: none;
+	}
+	.f-texto li{
+		cursor:pointer;
+		padding:10px;
+	}
+
+	.f-redesSociais{
+		display:flex;
+		justify-content:flex-end;
+		width:50%;
+		margin:15px;
+	}
+	.f-redesSociais img{
+		width:26px;
+		height:26px;
+		margin:15px;
+	}	
+	@media (min-width: 871px) and (max-width: 900px) {
+		nav a{
+			font-size:17px;
+			color:white;	
+			padding:40px 20px;
+		}
+	}
+	@media (min-width: 750px) and (max-width: 870px) {
+		nav a{
+			font-size:15px;
+			color:white;	
+			padding:40px 10px;
+		}
+		.pedidos{
+			font-size:15px;			
+		}
+		.tbPizza select{
+			font-size:15px;
+			height:30px;			
+		} 
+		.indexP2{
+			font-size:15px;
+		}
+		.indexP1{
+			font-size:13px;
+		}
+		.descricao{
+			height:50px;
+		}
+	}
+	 @media (min-width: 630px) and (max-width: 749px) {
+		nav a{
+			font-size:11px;
+			color:white;
+			/*padding:15px;	*/
+			padding:40px 15px;		
+		}
+	} 
+
+	@media (min-width: 515px) and (max-width: 629px) {
+
+		nav a{
+			font-size:10px;
+			color:white;
+			/*padding:12px;	*/
+			padding:50px 10px;		
+		}
+		.pedidos{
+			font-size:15px;			
+		}
+		.tbPizza select{
+			font-size:9px;
+			width:100%;	
+			height:28px;			
+		} 
+		
+		.tbPizza select{
+		font-size:15px;
+	}
+		.tbPizza{
+			flex-wrap:wrap;
+		}
+		.botaoComprar{
+			display:block;
+			margin:auto;
+			margin-bottom:5px;
+			margin-top:12px;
+			font-size:14px;
+		}
+		
+		.indexP2{
+			font-size:14px;
+		}
+		.indexP1{
+			font-size:15px;
+		}
+		.descricao{
+			height:56px;
+		}
+		.saborItem a{
+			font-size:12px;
+			
+		}
+		.saborItem{
+		flex-wrap:wrap;
+		width:35%;
+		margin-bottom:30px;
+		margin-top:30px
+		
+	} 
+
+	}
+	@media (min-width: 450px) and (max-width: 514px) {
+		
+	header{
+		display:flex;
+		width:100%;
+		justify-content:flex-end;
+		align-items:center;
+		background:linear-gradient(#141313,#141313);	
+		height:100px;		
+	}
+	.logo{
+		display:none;		
+	}
+		nav{
+		display:block;
+		position:absolute;
+		width:100%;
+		top:0;			
+	}
+	
+		nav a{
+			padding:30px 50px;
+		}
+
+	.menu{
+		position:absolute;
+		top:0px;
+		left:0;
+		display:block;	
+		width:80%;	
+		transform: translateX(-100%);
+		transition:transform 200ms linear;	
+	}
+
+	.menuAbrir{
+		transform: translateX(0);
+	}
+	.menu{
+		margin:0;
+		padding:0;			
+	}
+
+	nav li{
+		/* display:block; */
+		background:#1C1B1B;
+		width:50%;
+		height:40px;
+		padding:20px 15px;
+		margin:0;		
+	}
+		.btn{	
+		display:block;
+		background-image: url(imagens/menu1.png);
+		background-repeat:no-repeat;
+		text-indent:-9999px;
+		padding:20px 15px;
+	}
+	.sair{
+		background:#1C1B1B; 
+		background-image:url(imagens/menu1.png);
+		background-repeat:no-repeat;
+		padding-bottom:10px;	
+	} 
+	
+		nav a{
+			font-size:12px;
+			color:white;	
+		}
+		.pedidos{
+			font-size:15px;			
+		}
+		.tbPizza select{
+			font-size:12px;
+			width:100%;	
+			height:20px;			
+		} 
+		.tbPizza option{
+			font-size:12px;
+			width:5px;
+		}
+		
+		.tbPizza{
+			flex-wrap:wrap;
+		}
+		.botaoComprar{
+			display:block;
+			margin:auto;
+			margin-bottom:5px;
+			margin-top:12px;
+			font-size:14px;
+		}
+		
+		.indexP2{
+			font-size:13px;
+		}
+		.indexP1{
+			font-size:14px;
+		}
+		.descricao{
+			height:56px;
+		}
+		.saborItem a{
+			font-size:12px;			
+		}
+		.saborItem{
+		flex-wrap:wrap;
+		width:35%;	
+		margin-bottom:20px;
+		margin-top:20px
+	} 
+	.info p{
+		color:white;
+		font-size:13px;
+		
+	}
+
+	}
+
+	@media (min-width: 330px) and (max-width: 449px) {
+		.tbPizza select option {
+		font-size:10px;
+		}
+		.logo{
+		display:none;
+		}	
+		
+		nav{	
+		display:block;
+		position:absolute;
+		width:100%;
+		top:0;		
+	}
+
+	.menu{
+		position:absolute;
+		top:0;
+		left:0;
+		display:block;	
+		width:90%;	
+		transform: translateX(-100%);
+		transition:transform 200ms linear;	
+	}
+
+	.menuAbrir{
+		transform: translateX(0);
+	}
+	.menu{
+		margin:0;
+		padding:0;	
+	}
+
+	nav li{
+		display:block;
+		background:#1C1B1B;
+		width:50%;
+		height:30px;
+		padding:20px 15px;
+		margin:0;		
+	}
+		.btn{	
+		display:block;
+		background-image: url(imagens/menu1.png);
+		background-repeat:no-repeat;
+		text-indent:-9999px;
+		padding:20px 15px;	
+	}
+	.sair{
+		background:#1C1B1B; 
+		background-image:url(imagens/menu1.png);
+		background-repeat:no-repeat;		
+	} 
+	.sair:hover{
+		box-shadow:inset 2px 2px 10px rgba(0,0,0,0.9);	
+	}
+		
+		nav a{
+			font-size:9px;
+			color:white;
+			padding:20px 36px;	
+		}
+		.pedidos{
+			font-size:15px;			
+		}
+		.tbPizza select{
+			font-size:10px;
+			width:100%;	
+			height:20px;			
+		} 
+		.tbPizza option{
+			font-size:10px;
+			width:5px;
+		} 		
+		
+		.tbPizza{
+			flex-wrap:wrap;
+		}
+		.botaoComprar{
+			display:block;
+			margin:auto;
+			margin-bottom:5px;
+			margin-top:12px;
+			font-size:14px;
+		}
+		
+		.indexP2{
+			font-size:13px;
+		}
+		.indexP1{
+			font-size:14px;
+		}
+		.descricao{
+			height:56px;
+		}
+		.saborItem a{
+			font-size:12px;
+			
+		}
+		.saborItem{
+		flex-wrap:wrap;
+		width:35%;
+		margin-bottom:20px;
+		margin-top:20px
+	} 
+	.info p{
+		color:white;
+		font-size:9px;
+		
+	}
+
+	}
+	
+	
+	@media (min-width: 0px) and (max-width: 329px) {
+		.tbPizza select option {
+		font-size:10px;
+		}
+		.logo{
+		display:none;
+		}
+			
+		nav{	
+		display:block;
+		position:absolute;
+		width:100%;
+		top:0;		
+	}
+
+	.menu{
+		position:absolute;
+		top:0;
+		left:0;
+		display:block;	
+		width:90%;	
+		transform: translateX(-100%);
+		transition:transform 200ms linear;	
+	}
+
+	.menuAbrir{
+		transform: translateX(0);
+	}
+	.menu{
+		margin:0;
+		padding:0;	
+	}
+
+	nav li{
+		display:block;
+		background:#1C1B1B;
+		width:50%;
+		height:30px;
+		padding:20px 15px;
+		margin:0;		
+	}
+		.btn{	
+		display:block;
+		background-image: url(imagens/menu1.png);
+		background-repeat:no-repeat;
+		text-indent:-9999px;
+		padding:20px 15px;	
+	}
+	.sair{
+		background:#1C1B1B; 
+		background-image:url(imagens/menu1.png);
+		background-repeat:no-repeat;
+		
+	} 
+	.sair:hover{
+		box-shadow:inset 2px 2px 10px rgba(0,0,0,0.9);
+	}		
+		nav a{
+			font-size:9px;
+			color:white;
+			padding:25px 32px;	
+		}
+		.pedidos{
+			font-size:15px;
+			
+		}
+		.tbPizza select{
+			font-size:10px;
+			width:100%;	
+			height:20px;			
+		} 
+		.tbPizza option{
+			font-size:9px;
+			width:5px;
+		} 
+		
+		
+		.tbPizza{
+			flex-wrap:wrap;
+		}
+		.botaoComprar{
+			display:block;
+			margin:auto;
+			margin-bottom:5px;
+			margin-top:12px;
+			font-size:14px;
+		}
+		
+		.indexP2{
+			font-size:13px;
+		}
+		.indexP1{
+			font-size:14px;
+		}
+		.descricao{
+			height:56px;
+		}
+		.saborItem a{
+			font-size:12px;
+			
+		}
+		.saborItem{
+		flex-wrap:wrap;
+		width:35%;
+		margin-bottom:15px;
+		margin-top:15px
+	} 
+	.info p{
+		color:white;
+		font-size:9px;
+		
+	}
+
+	}
+
+
+
+

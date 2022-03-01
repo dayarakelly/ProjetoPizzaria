@@ -1,0 +1,104 @@
+		<!DOCTYPE html>
+		<html lang='pt-BR'>
+			<head>
+				<meta charset='UTF-8'>
+				<link rel="stylesheet" href="estilo.css">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Pizzaria</title>
+			</head>		
+			<body>
+				<header>
+					<div class='logo'>
+						<!-- pizzaIcone.png -->
+						<a href='index.html'><img src='imagens/logo1.png'></a>
+					</div>
+					
+					<nav class="abrirMenu">
+					<a href="#menu" class="btn btnAbrir">Menu</a>
+					
+						<ul id="menu" class="menu">
+							<li class="sair btn">SAIR</a></li>
+							<li class="lista"><a href="index.html">INICIO</a></li>
+							<li  class="lista"><a href="#cardapio">CARDÁPIO</a></li>
+							<li  class="lista"><a href="#combos">COMBOS</a></li>
+							<li  class="lista"><a href="montar.html">MONTAR PIZZA</a></li>
+							<li  class="lista"><a href="#contato">CONTATO</a></li>
+							
+						</ul>
+					</nav>
+				</header>	
+				<section class='pedidos'>
+					<form method='POST' action='java.js'>
+						<div class='sabor'>
+							<img src="sabores/pizzaPrimavera.jpg">
+							<div class='titulo'>
+								<p class='p1'>Primavera</p>
+								<p  class='p2'>Queijo, pimentão, cebola, tomate, milho.</p>
+							</div>
+						</div>
+						<div class='tamanhos'>
+							<p class='pedidoTitulo'>&nbspTamanho:</p>				
+								<input type='radio' name='tamanho' id='pequeno' class='tamanho-item'>
+								<label for='pequeno'>Pequeno</label>				
+								<input type='radio' name='tamanho' id='medio' class='tamanho-item'>
+								<label for='medio'>Medio</label>				
+								<input type='radio' name='tamanho' id='grande' class='tamanho-item'>
+								<label for='grande'>Grande</label>
+							</div><br>
+							
+							<div class='bordas'>
+								<p class='pedidoTitulo'>&nbspBordas:</p>
+									<input type='radio' name='borda' id='sem' class='borda-item'>
+									<label for='sem'>Sem borda</label></br>
+									<input type='radio' name='borda' id='catupiry' class='borda-item'>
+									<label for='catupiry'>Catupiry</label></br>
+									<input type='radio' name='borda' id='cheedar' class='borda-item'>
+									<label for='cheedar'>Cheedar</label></br>								
+								</div><br>
+								
+								<div class='extras'>
+									<p class='pedidoTitulo'>&nbspExtras</p>					
+										<input type='checkbox' name='extra' id='azeitona' class='extra-item'>
+										<label for='azeitona'>Azeitona<label><br>
+											
+										<input type='checkbox' name='extra' id='beacon' class='extra-item'>
+										<label for='beacon'>Beacon<label><br>
+										<input type='checkbox' name='extra' id='cebola' class='extra-item'>
+										<label for='cebola'>Cebola<label><br>
+										<input type='checkbox' name='extra' id='milho' class='extra-item'>
+										<label for='milho'>Milho<label><br>
+										<input type='checkbox' name='extra' id='pimentao' class='extra-item'>
+										<label for='pimentao'>Pimentão<label><br>
+										<input type='checkbox' name='extra' id='tomate' class='extra-item'>
+										<label for='tomate'>Tomate<label><br>
+																
+										</div>
+															<!--<input type='submit' value='Confirmar'>-->
+															<button class="botao" type="submit"><span>Concluído</span> <span>Total</span></button> 
+															</form>
+															
+														</section>
+					<footer  id="contato">
+						<div class="f-div">
+
+						<div class="f-texto">
+						<ul>
+						<li>Ajuda</li>
+						<li>Contato</li>
+						<li>Sobre</li>
+						</ul>
+						</div>
+											
+						<div class="f-redesSociais">
+						<a href=""><img src="imagens/instagram.png"></a>
+						<a href=""><img src="imagens/facebook.png"></a>
+						</div>
+						</div>		
+					</footer>			
+					</body>						
+					<script src='menu.js'></script>			
+					</html>		
+								
+			
+			
+																										
