@@ -280,7 +280,7 @@
 		background-size:cover;
 	}
 	.imgRodape{
-		background-image:url(imagens/background.jpg);
+		background-image:url(../imagens/background.jpg);
 	} 
 
 	footer {
@@ -473,14 +473,14 @@
 	}
 		.btn{	
 		display:block;
-		background-image: url(imagens/menu1.png);
+		background-image: url(../imagens/menu1.png);
 		background-repeat:no-repeat;
 		text-indent:-9999px;
 		padding:20px 15px;
 	}
 	.sair{
 		background:#1C1B1B; 
-		background-image:url(imagens/menu1.png);
+		background-image:url(../imagens/menu1.png);
 		background-repeat:no-repeat;
 		padding-bottom:10px;	
 	} 
