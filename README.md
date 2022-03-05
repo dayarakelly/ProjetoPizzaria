@@ -1,5 +1,5 @@
 # ProjetoPizzaria
-O objetivo deste projeto é aprimorar meus conhecimentos em  HTML, CSS e JAVASCRIPT.
+O objetivo deste projeto é aprimorar meus conhecimentos em  HTML, CSS e JAVASCRIPT criando uma página responsiva.
 <div align="center">
  Página inicial</br>
  
